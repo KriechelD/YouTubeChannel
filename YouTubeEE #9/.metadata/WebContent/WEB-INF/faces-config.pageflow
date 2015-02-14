@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13930085114290" configfile="/FirstApp/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" id="pf14067429334343" referenceLink="//@navigationRule.0/@fromViewId|" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="secondPage.xhtml" id="pf14067429334345" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" path="secondPage.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="thirdPage.xhtml" id="pf14067429838697" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" path="thirdPage.xhtml"/>
+</pageflow:Pageflow>
