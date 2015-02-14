@@ -1,0 +1,5 @@
+2013-10-19 14:41:51,974 DEBUG [main] - test.pack.Log4J.main 11 - Test Message
+2013-10-19 14:42:41,563 ERROR [main] - test.pack.Log4J.main 14 - java.lang.Exception: New Exception
+2013-10-19 14:43:24,848 ERROR [main] - test.pack.Log4J.main 14 - java.lang.Exception: New Exception
+java.lang.Exception: New Exception
+	at test.pack.Log4J.main(Log4J.java:12)
