@@ -1,0 +1,7 @@
+<root>
+  <facet id="jst.jsf">
+    <node name="libprov">
+      <attribute name="provider-id" value="GlassFish-3.1-SystemLibrary-JSF"/>
+    </node>
+  </facet>
+</root>
