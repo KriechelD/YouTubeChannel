@@ -1,0 +1,25 @@
+@CHARSET "ISO-8859-1";
+
+.root {
+	-fx-spacing: 30;
+	-fx-background-color:#BDBDBD;
+	-fx-padding: 10;
+}
+
+.my_customLabel {
+	-fx-font-size: 40px;
+	-fx-font-weight: bold;
+}
+
+.button {
+	-fx-font-family: "Arial";
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+	-fx-background-color: linear-gradient(#9EA7E5, #61a2b1);
+	-fx-text-fill: #383640;
+}
+
+.button:hover {
+	-fx-background-color: linear-gradient(#2A5058, #61a2b1);
+	-fx-text-fill: #ffffff;
+}
