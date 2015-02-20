@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+    <jdbc-connection-pool name="TestPool" res-type="javax.sql.DataSource" datasource-classname="com.mysql.jdbc.jdbc2.optional.MysqlDataSource">
+        <property name="url" value="jdbc:mysql://"></property>
+        <property name="user" value="myuser"></property>
+        <property name="password" value="mypassword"></property>        
+    </jdbc-connection-pool>
+    
+</resources>

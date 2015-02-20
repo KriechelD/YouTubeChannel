@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>Example Title</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:panelGrid>
+			<h:outputLabel value="String:" />
+			<h:inputText id="string" value="#{dataBean.inputString}"
+				requiredMessage="Bad String">
+				<f:validateRequired />
+			</h:inputText>
+
+			<h:outputLabel value="Int:" />
+			<h:inputText id="int" value="#{dataBean.inputInt}" validatorMessage="Bad Int">
+				<f:validateLongRange minimum="10" />
+			</h:inputText>
+
+			<h:outputLabel value="Double:" />
+			<h:inputText id="double" value="#{dataBean.inputDouble}" validatorMessage="Bad Double">
+				<f:validateDoubleRange maximum="100" />
+			</h:inputText>
+
+			<h:commandButton value="Submit" />
+
+			<h:message for="string"></h:message>
+			<h:message for="int"></h:message>
+			<h:message for="double"></h:message>
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>
