@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Java\jdk1.7.0_51\bin\wsimport.exe" -keep -s src -d bin "http://dennis-pc:8080/FirstApp/DemoWebservice?wsdl"
