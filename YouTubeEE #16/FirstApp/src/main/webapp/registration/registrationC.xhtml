@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>Example Title</title>
+</h:head>
+<h:body>
+	<h:form style="width:250px;margin: 0 auto;">
+		<h:panelGrid columns="2">
+	
+			<h:outputLabel value="Firstname:" />
+			<h:outputLabel value="#{registrationBean.firstname}"/>
+			
+			<h:outputLabel value="Lastname:" />
+			<h:outputLabel value="#{registrationBean.lastname}"/>
+			
+			<h:outputLabel value="PostCode:" />
+			<h:outputLabel value="#{registrationBean.post_code}"/>
+			
+			<h:outputLabel value="City:" />
+			<h:outputLabel value="#{registrationBean.city}"/>
+			
+		</h:panelGrid>
+		
+		<h:commandButton value="Next" action="exitRegistration" style="float:right"/>
+		<h:commandButton value="Back" action="registrationB" style="float:left"/>
+	</h:form>
+</h:body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+	version="2.2">
+	<flow-definition id="registration">
+		<start-node>registrationStart</start-node>
+		<view id="registrationStart">
+			<vdl-document>/registration/registrationA.xhtml</vdl-document>
+		</view>
+		
+		<switch id="registrationPage2">
+			<case>
+				<if>#{not empty registrationBean.firstname}</if>
+				<from-outcome>registrationB</from-outcome>
+			</case>
+			<default-outcome>registrationA</default-outcome>
+		</switch>
+	
+		<flow-return id="exitRegistration">
+			<from-outcome>/index.xhtml</from-outcome>
+		</flow-return>
+		
+		<finalizer>#{registrationBean.onExit}</finalizer>
+	</flow-definition>
+</faces-config>
