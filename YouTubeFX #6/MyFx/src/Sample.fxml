@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+   <children>
+      <Button layoutX="287.0" layoutY="158.0" mnemonicParsing="false" onAction="#onSubmitClick" text="Submit" />
+      <Label layoutX="140.0" layoutY="125.0" text="Name:" />
+      <TextField fx:id="tf_name" layoutX="192.0" layoutY="121.0" />
+   </children>
+</Pane>
